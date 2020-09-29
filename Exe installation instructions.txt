@@ -1,4 +1,4 @@
-use anaconda prompt for patching .exe file
+I use anaconda prompt for patching .exe file
 
 code:
 
@@ -9,13 +9,12 @@ pyinstaller --noconsole AppName.py --onefile
 
 everytime I patch the app it will create dist, build and .spec file.
 
-		Be certain to delete old ones first to avoid confusion
-
 When pyisntaller fails:
 	open the .spec file and add:
-
+#############
 import sys
 sys.setrecursionlimit(5000)
+##############
 
 ...to top of the code in .spec file
 
@@ -23,7 +22,7 @@ then run pyinstaller again (this time using .spec file)
 cpy
 The app itself is located in ~\dist\HPP Lab Data Manger.exe
 	
-Make a shortcut so you don't have to dig everytime.
+If you want, make a shortcut so you don't have to dig everytime.
 
 
 
